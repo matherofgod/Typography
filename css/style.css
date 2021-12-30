@@ -110,6 +110,7 @@ width: 80%;
     font-weight: 300;
     color: #ffffff;
     width: 100%;
+    max-width: 1440px;
     margin: 0px auto;
     height: 460px;
     background: url(/img/slider/slider_background.png) center / cover no-repeat;
@@ -360,6 +361,12 @@ color: #000;
     justify-content: flex-start;
 }
 
+.clients__row{
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+
 .footer__content{
     background: url(/img/footer.png) center / cover no-repeat;
     width: 100%;
@@ -390,3 +397,278 @@ color: #000;
     padding-right: 10px;
 }
 
+
+@media (max-width: 1199px) {
+    .container{
+        max-width: 960px;
+    }
+
+
+     .clients__row{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+      .clients_column:nth-child(n + 2) {
+        order: 1;
+      }
+      .clients_column:nth-child(n + 3) {
+        order: 2;
+      } 
+
+      .maincontent__row{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+      .maincontent_column:nth-child(n + 2) {
+        order: 1;
+      }
+      .maincontent_column:nth-child(n + 3) {
+        order: 2;
+      } 
+      .link-text{
+        font-size: 13px;
+    }
+    .slider__title {
+        font-size: 30px;
+    }
+    .slider__text {
+        font-size: 15px;
+    }
+    .slider__img{
+        width: 150px;
+    }
+    .banner__img{
+        display: none;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .maincontent__title {
+        font-size: 18px;
+    }
+
+    .footer__logo {
+        display: none;
+    }
+    .footercontent__row {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    }    
+
+
+ @media (max-width: 767px) {
+  .container{
+    max-width: 640px;
+  }  
+/* munu burger  */
+
+/* Гамбургер иконка */
+.menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:7;
+	overflow: hidden;
+}
+
+.menu {
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Меню, которое будет появляться */
+.burger-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 170px;
+	padding: 15px;
+    background: #9f9f9fd1;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+    z-index: 5;
+}
+
+.burger-menu.active {
+	transform: translateX(0);
+}
+
+.burger-menu li {
+	list-style-type: none;
+}
+
+
+
+  /* ------------- */
+    .slider__img{
+        display: none;
+    }
+
+    .slider__title {
+        text-align: center;
+    }
+
+    .slider__text {
+        text-align: center;
+    }
+
+    .banner__title {
+        font-size: 27px;
+    }
+    .banner__text {
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .container{
+        max-width: 460px;
+        padding: 0 10px;
+    }  
+    .header_info{
+        justify-content: center;
+    }
+    .contact-adress{
+        display: none;
+    }
+    .social {
+        width: 35px;
+        height: 35px;
+    }  
+    .link-text {
+        font-size: 16px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .tel{
+        margin: 0 auto;
+    }
+    .banner__row{
+        justify-content: center;
+    } 
+    .banner__title {
+        font-size: 18px;
+    }
+
+    .banner__text {
+        font-size: 8px;
+    }
+    .btn-order{
+        width: 250px;
+    }
+
+    .maincontent__row {
+        justify-content: center;
+    }
+    .maincontent__title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .item-maincontent{
+        margin: 10px;
+    }
+    .footercontent__row{
+        padding-top: 10px;
+    }
+    .footer__menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footercontent__text{
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 320px) {
+.container{
+    max-width: none;
+    padding: 0 10px;
+}
+.header_info{
+    justify-content: center;
+}
+.contact-adress{
+    display: none;
+}
+.social {
+    width: 30px;
+    height: 30px;
+}
+.link-text {
+    font-size: 15px;
+}
+.maincontent {
+    margin-top: 30px;
+}
+.maincontent__title{
+    margin: 30px 0 20px;
+}
+.item-maincontent {
+    margin-top: 30px;
+}
+.maincontent__row{
+    margin-top: 10px;
+}
+.footercontent__row{
+    padding-top: 10px;
+}
+.footer__menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footercontent__text{
+    text-align: center;
+    font-size: 13px;
+}
+}
