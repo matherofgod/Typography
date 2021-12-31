@@ -5,3 +5,4 @@ menuBtn.addEventListener('click', function(e){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 })
+

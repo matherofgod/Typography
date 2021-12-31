@@ -62,11 +62,11 @@
 
       </div>     
   </header>
-  <main class="page">
+  <div class="page">
     
     <!-- slider -->
     <div class="carousel-wrap">
-      <div class="owl-carousel owl-theme">
+      <div class="owl-carousel owl-theme slide-one">
           <div class="item">
             <div class="slider__row">
               <div class="slider__column">
@@ -105,6 +105,7 @@
          
       </div>
     </div>
+
     <!-- Преимущества сотрудничества -->
     <div class="maincontent container">
       <div class="maincontent__title">
@@ -112,37 +113,40 @@
       </div>
       <hr>
       <div class="maincontent__row">
-        <div class="maincontent__column">
-          <div class="item-maincontent">
-            <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation_1.png" alt="Доставим готовую продукцию точно в срок на адрес заказчика"></div>
-            <div class="item-maincontent__discription">Доставим готовую продукцию точно в срок на адрес заказчика</div>
+          <div class="owl-carousel slide-two">
+          <div class="maincontent__column">
+            <div class="item-maincontent">
+              <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation_1.png" alt="Доставим готовую продукцию точно в срок на адрес заказчика"></div>
+              <div class="item-maincontent__discription">Доставим готовую продукцию точно в срок на адрес заказчика</div>
+            </div>
+          </div>
+          <div class="maincontent__column">
+            <div class="item-maincontent">
+              <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation2.jpeg" alt="Современное оборудование позволяет печатать от одного экземпляра"></div>
+              <div class="item-maincontent__discription">Современное оборудование позволяет печатать от одного экземпляра</div>
+            </div>
+          </div>
+          <div class="maincontent__column">
+            <div class="item-maincontent">
+              <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation_3.png" alt="Найдем оптимальное решение для каждой конкретной задачи и бюджета"></div>
+              <div class="item-maincontent__discription">Найдем оптимальное решение для каждой конкретной задачи и бюджета</div>
+            </div>
+          </div>
+          <div class="maincontent__column">
+            <div class="item-maincontent">
+              <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation_4.png" alt="Адресная рассылка рекламных материалов по запросу заказчика"></div>
+              <div class="item-maincontent__discription">Адресная рассылка рекламных материалов по запросу заказчика</div>
+            </div>
+          </div>
+          <div class="maincontent__column">
+            <div class="item-maincontent">
+              <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation_5.png" alt="Оперативность изготовления полиграфии без потери качества"></div>
+              <div class="item-maincontent__discription">Оперативность изготовления полиграфии без потери качества</div>
+            </div>
           </div>
         </div>
-        <div class="maincontent__column">
-          <div class="item-maincontent">
-            <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation2.jpeg" alt="Современное оборудование позволяет печатать от одного экземпляра"></div>
-            <div class="item-maincontent__discription">Современное оборудование позволяет печатать от одного экземпляра</div>
-          </div>
-        </div>
-        <div class="maincontent__column">
-          <div class="item-maincontent">
-            <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation_3.png" alt="Найдем оптимальное решение для каждой конкретной задачи и бюджета"></div>
-            <div class="item-maincontent__discription">Найдем оптимальное решение для каждой конкретной задачи и бюджета</div>
-          </div>
-        </div>
-        <div class="maincontent__column">
-          <div class="item-maincontent">
-            <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation_4.png" alt="Адресная рассылка рекламных материалов по запросу заказчика"></div>
-            <div class="item-maincontent__discription">Адресная рассылка рекламных материалов по запросу заказчика</div>
-          </div>
-        </div>
-        <div class="maincontent__column">
-          <div class="item-maincontent">
-            <div class="item-maincontent__icon"><img class="iconn" src="/img/cooperation/cooperation_5.png" alt="Оперативность изготовления полиграфии без потери качества"></div>
-            <div class="item-maincontent__discription">Оперативность изготовления полиграфии без потери качества</div>
-          </div>
-        </div>
-      </div> 
+      </div>
+
       <!-- Печатная продукция -->
       <div class="maincontent__title">
        <span> Печатная продукция типографии</span>
@@ -345,6 +349,7 @@
       </div>
     <hr>
     <div class="clients__row">
+      <div class="owl-carousel slide-three">
       <div class="clients__column">
         <div class="item-clients">
           <div class="item-clients__iconn"><img src="/img//clients/clients_grad.png" alt="Град"></div>
@@ -375,6 +380,7 @@
           <div class="item-clients__iconn"><img src="/img//clients/clients_rzd.png" alt="РЖД"></div>
         </div>
       </div>
+    </div>
     </div>
   </div>
   </main>
@@ -422,19 +428,61 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script>
-    $(document).ready(function(){
-      $('.owl-carousel').owlCarousel({
-            margin: 10,
-            nav: true,
-            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
-            items:1,
-            autoWidth: false,
-            touchDrag: true,
-        });
 
+$(document).ready(function(){
+    $('.slide-one').owlCarousel({
+          margin: 10,
+          nav: true,
+          navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+          items:1,
+          autoWidth: false,
+          touchDrag: true,
+      });
 
-    });
+      $('.slide-two').owlCarousel({
+          nav: false,
+          navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+          loop:true, //Зацикливаем слайдер
+          autoWidth: true,
+          margin:10, //Отступ от картино если выводите больше 1
+          autoplay:true, //Автозапуск слайдера
+          smartSpeed:2000, //Время движения слайда
+          autoplayTimeout:4000, //Время смены слайда
+          responsive:{ //Адаптация в зависимости от разрешения экрана
+              0:{
+                  items:2
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
+      });
+
+      $('.slide-three').owlCarousel({
+          nav: false,
+          loop:true, //Зацикливаем слайдер
+          autoWidth: true,
+          margin:10, //Отступ от картино если выводите больше 1
+          autoplay:true, //Автозапуск слайдера
+          smartSpeed:2000, //Время движения слайда
+          autoplayTimeout:4000, //Время смены слайда
+          responsive:{ //Адаптация в зависимости от разрешения экрана
+              0:{
+                  items:2
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
+      });
+
+  });
   </script>
-  
 </body>
 </html>
