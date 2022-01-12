@@ -781,7 +781,8 @@ color: #000;
 
   .modal__btn {
     box-shadow: none;
-    background: #77db63;
+    background: #1f1f1f;
+    color: white;
     padding: 10px 25px;
     border-radius: 50px;
     margin: 10px auto;
